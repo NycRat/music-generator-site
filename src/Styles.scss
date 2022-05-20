@@ -1,0 +1,50 @@
+$background-color: #1b1b1c;
+$background-color-light: #4f4f4d;
+
+button {
+  font-family: "Kanit", sans-serif;
+}
+
+html,
+body,
+#root {
+  font-family: "Kanit", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: white;
+}
+
+.large-button {
+  padding: 10px;
+  font-size: calc(20px + 1vmin);
+  border-radius: 10px;
+}
+
+.setting-option {
+  font-size: calc(22px + 1vmin);
+  span {
+    display: inline-block;
+    width: 300px;
+    max-width: 50vw;
+  }
+  button {
+    @extend .large-button;
+    margin: 5px;
+  }
+}
+
+.settings {
+  background-color: $background-color-light;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.app {
+  // display: flex;
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
