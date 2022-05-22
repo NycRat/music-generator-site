@@ -58,8 +58,8 @@ const App = () => {
       <div className="settings">
         <div className="setting-option">
           <span>BPM: {bpm}</span>
-          <button onClick={() => setBpm(bpm + 5)}>-</button>
-          <button onClick={() => setBpm(bpm - 5 > 0 ? bpm - 5 : bpm)}>+</button>
+          <button onClick={() => setBpm(bpm - 5 > 0 ? bpm - 5 : bpm)}>-</button>
+          <button onClick={() => setBpm(bpm + 5)}>+</button>
         </div>
 
         <div className="setting-option">
