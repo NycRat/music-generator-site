@@ -5,6 +5,10 @@ button {
   font-family: "Kanit", sans-serif;
 }
 
+h1 {
+  font-size: calc(40px + 1vw);
+}
+
 html,
 body,
 #root {
@@ -15,6 +19,13 @@ body,
   padding: 0;
   background-color: $background-color;
   color: white;
+  text-align: center;
+}
+
+.app {
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
 }
 
 .large-button {
@@ -38,13 +49,8 @@ body,
 
 .settings {
   background-color: $background-color-light;
+  margin: auto;
+  width: fit-content;
   padding: 10px;
   border-radius: 10px;
-}
-
-.app {
-  // display: flex;
-  padding: 10px;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
 }

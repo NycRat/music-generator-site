@@ -54,6 +54,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <h1>Music Generator</h1>
       <div className="settings">
         <div className="setting-option">
           <span>BPM: {bpm}</span>
@@ -63,7 +64,6 @@ const App = () => {
 
         <div className="setting-option">
           <span># of Notes: {numNotes}</span>
-          <button onClick={() => setNumNotes(numNotes + 1)}>+</button>
           <button
             onClick={() =>
               setNumNotes(numNotes - 1 > 0 ? numNotes - 1 : numNotes)
@@ -71,6 +71,7 @@ const App = () => {
           >
             -
           </button>
+          <button onClick={() => setNumNotes(numNotes + 1)}>+</button>
         </div>
       </div>
 
